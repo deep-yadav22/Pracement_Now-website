@@ -1,0 +1,16 @@
+{% extends "index.html" %} {% block content %}
+<table class="border border-dark rounded">
+  {% for x in Data %}
+  <tr class="border border-dark rounded">
+    <td class="border border-dark rounded">{{x.name}}</td>
+    <td class="border border-dark rounded">{{x.email}}</td>
+    <td class="border border-dark rounded">{{x.password}}</td>
+    <td class="border border-dark rounded">{{x.resume}}</td>
+    <td class="border border-dark rounded">{{x.photo}}</td>
+    <td class="border border-dark rounded">{{x.phonenumber}}</td>
+    <td class="border border-dark rounded">{{x.address}}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock content %}
